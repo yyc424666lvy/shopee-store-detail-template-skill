@@ -102,4 +102,3 @@ The supplied master template contained `sp03` twice. This package keeps the firs
 ## License
 
 MIT for the Skill code and packaging. Store-specific business copy/templates remain your own operational content.
-
