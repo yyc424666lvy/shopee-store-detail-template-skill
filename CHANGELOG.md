@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.1 - 2026-10-30
+
+- **`install.ps1` no longer deletes an existing install.** When the destination folder already exists, it is renamed to `<dest>.bak-<timestamp>` and left in place instead of being removed with `Remove-Item -Recurse -Force`. Pass `-Force` to get the old destructive behaviour.
+- **`uninstall.ps1` requires `-Force`.** Without it the script only prints what it would delete and exits non-zero. Removing the skill folder is permanent and does not go to the recycle bin.
+- **Added `QUICKSTART-zh.md`.** A Chinese quick-start covering GitHub installation, usage triggers, the exact input format, the 28 supported stores, output contract, and how to add a new store. Intended to be forwarded to teammates as-is.
+- **README points at the Chinese quick-start** and the repository structure listing includes it.
+
 ## 1.1.0 - 2026-10-30
 
 - **Output format hardened.** Deliverables are plain `.txt` (UTF-8 with BOM, CRLF line endings), never Markdown. One file per store, body only: line 1 is the store's opening block, the last line is its closing block. Warnings and self-check results go in the chat reply, not the file.

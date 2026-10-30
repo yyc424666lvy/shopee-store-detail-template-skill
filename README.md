@@ -4,6 +4,8 @@ A WorkBuddy Skill for Shopee Philippines cross-listing. Give WorkBuddy one gener
 
 **Scope: format stage only.** The input is a product detail you already have. This skill does not fetch, scrape, or log in to any external product source — getting the source detail is upstream of this skill.
 
+**中文上手说明：[`QUICKSTART-zh.md`](QUICKSTART-zh.md)** — installation, usage, input format, and the 28 supported stores, all in Chinese. Send that file to teammates.
+
 ## Supported stores
 
 - Cross-border: `3pf01`–`3pf11`
@@ -76,6 +78,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\uninstall.ps1
 shopee-store-detail-template-skill/
 ├── SKILL.md
 ├── README.md
+├── QUICKSTART-zh.md
 ├── VERSION
 ├── CHANGELOG.md
 ├── LICENSE
