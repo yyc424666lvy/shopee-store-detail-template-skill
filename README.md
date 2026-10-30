@@ -2,6 +2,8 @@
 
 A WorkBuddy Skill for Shopee Philippines cross-listing. Give WorkBuddy one generic product detail plus one or more store IDs; it applies the corresponding canonical store template while preserving product facts.
 
+**Scope: format stage only.** The input is a product detail you already have. This skill does not fetch, scrape, or log in to any external product source — getting the source detail is upstream of this skill.
+
 ## Supported stores
 
 - Cross-border: `3pf01`–`3pf11`
@@ -16,6 +18,8 @@ A WorkBuddy Skill for Shopee Philippines cross-listing. Give WorkBuddy one gener
 - Handles special `【Label：Value` Specification formatting
 - Supports one-store and batch cross-listing requests
 - Preserves product facts and feature wording by default
+- Outputs plain `.txt` (UTF-8 with BOM, CRLF) — one file per store, body only, ready for Ctrl+A → Ctrl+C
+- Normalizes non-canonical input (unnumbered items, mixed colons, `-` bullets) without inventing content
 
 ## Install on Windows / WorkBuddy
 
